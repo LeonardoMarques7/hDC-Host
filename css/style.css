@@ -352,7 +352,7 @@ nav {
 
 input:focus, textarea:focus {
     outline-color: #2cc76a;
-    outline-offset: 2px;
+    outline-offset: 1px;
 }
 
 .contact-container textarea {
@@ -365,7 +365,7 @@ input:focus, textarea:focus {
 .searchdomain-container input[type="text"]{
     outline-style: dashed;
     outline-color: #2cc762;
-    outline-offset: 1px;
+    outline-offset: -1px;
     
     animation-duration: 3s;
   animation-name: slidein;
