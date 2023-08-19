@@ -58,11 +58,18 @@ strong {
 
 nav {
     position: relative;   
+    max-width: 100%;
 }
 
 .logo {
     width: 50px;
     margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+    .nav-container {
+        padding: 0 1rem;
+    }
 }
 
 .navbar-items {
@@ -77,13 +84,13 @@ nav {
 .navbar-items li {
     display: inline-block;
     text-transform: uppercase;
-    margin-left: 25px;
 }
 
 .navbar-items a {
     color: #fff;
     text-decoration: none;
     transition: 0.5s;
+    margin: 0px 5px;
 }
 
 .navbar-items a:hover {
