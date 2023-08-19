@@ -297,7 +297,7 @@ nav {
 }
 
 .searchdomain-container input[type="text"] {
-    background-color: #dadada;
+    background-color: #e8e9ea;
     width: 60%;
     padding: 20px;
     font-size: 20px;
@@ -306,18 +306,18 @@ nav {
 
 .searchdomain-container input[type="submit"] {
     background-color: #2cc76a;
+    border: 1px solid #2cc76a;
     padding: 15px 30px;
     color: #fff;
     font-size: 24px;
     cursor: pointer;
-    opacity: .9;
-}
-
-.contact-container input[type="submit"]:hover {
-    opacity: 1;
+    transition: 0.5s;
 }
  
 .searchdomain-container input[type="submit"]:hover {
+    background-color: transparent;
+    color: #2cc76a;
+    padding: 15px 32px;
     opacity: 1;
 }
 
@@ -346,7 +346,7 @@ nav {
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #2cc762;
-    background-color: #dadada;
+    background-color: #e8e9ea;
     margin: 0 10px 20px;
 }
 
@@ -363,9 +363,8 @@ input:focus, textarea:focus {
 }
 
 .searchdomain-container input[type="text"]{
-    outline-style: dashed;
-    outline-color: #2cc762;
-    outline-offset: -1px;
+    outline-color: #2cc76a;
+    outline-offset: 2px;
     
     animation-duration: 3s;
   animation-name: slidein;
@@ -383,11 +382,14 @@ input:focus, textarea:focus {
     background-color: #2cc76a;
     color: #fff;
     cursor: pointer;
-    opacity: .9;
+    transition: 0.5s;
+    width: 200px;
 }
 
 .contact-container input[type="submit"]:hover {
-    opacity: 1;
+    background-color: transparent;
+    color: #2cc76a;
+    width: 250px;
 }
 
 /* footer */
@@ -435,6 +437,11 @@ footer {
 
     .plan {
         margin: 0 auto 50px;
+    }
+
+    .contact-container input[type="submit"]:hover {
+        width: 100%;
+        max-width: 100%;
     }
 }
 

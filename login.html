@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erro no login!!</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>hDC Host - Login</title>
+    <link rel="stylesheet" href="./css/style-login.css">
     <link rel="shortcut icon" href="./img/hdchostlogo.png" type="image/png">
     <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,13 +14,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="error-message">
-        <i class="fa-solid fa-triangle-exclamation fa-fade" style="color: #ffe438;"></i>
-        <h1>Erro no Login</h1>
-        <i class="fa-solid fa-triangle-exclamation fa-fade" style="color: #ffe438;"></i>
-    </div>
-    <div class="center">
-        <a href="./index.html"><button class="btn-return">Volte para o site</button></a>
-    </div>
+    <main>
+        <div class="main-container">
+            <div class="head-card-login">
+                <figure>
+                    <img src="./img/hdchostlogo.png" alt="" class="logo">
+                </figure>
+                <h1>hDC Host</h1>
+                <p>Faça o login aqui <strong>:)</strong></p>
+            </div>
+            <div class="main-card-login">
+                <div class="inputs-container">
+                    <form id="form">
+                        <input type="text" name="email" id="email" placeholder="E-mail" required>
+                        <input type="password" name="senha" id="senha" placeholder="Senha" required>
+                        <input type="submit" value="Entrar">
+                    </form>                    
+                </div>
+            </div>
+            <div class="footer-card-login">
+                <p>hDC Host &copy; 2023</p>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
 </body>
 </html>

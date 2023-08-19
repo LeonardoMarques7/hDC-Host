@@ -31,7 +31,7 @@
                     <a href="#contacts" class="item-button">Contato</a>
                   </li>
                   <li>
-                    <a href="#" class="default-btn">Entrar</a>
+                    <a href="login.html" class="default-btn">Entrar</a>
                   </li>
                 </ul>
               </nav>
@@ -50,7 +50,7 @@
                         <i class="fas fa-shield-alt"></i>
                         <h3>Segurança</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit</strong>. 
                             Placeat, quasi amet est in excepturi ad. Tempora, illo quibusdam modi,
                             saepe distinctio eum autem velit,
                             nisi in nihil corrupti veritatis. Minima.
@@ -61,7 +61,7 @@
                         <h3>Performance</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Placeat, quasi amet est in excepturi ad. Tempora, illo quibusdam modi,
+                            <strong>Placeat, quasi amet est in excepturi ad</strong>. Tempora, illo quibusdam modi,
                             saepe distinctio eum autem velit,
                             nisi in nihil corrupti veritatis. Minima.
                         </p>
@@ -71,8 +71,8 @@
                         <h3>Suporte 24/7</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Placeat, quasi amet est in excepturi ad. Tempora, illo quibusdam modi,
-                            saepe distinctio eum autem velit,
+                            Placeat, quasi amet est in excepturi ad. <strong>Tempora, illo quibusdam modi,
+                            saepe distinctio eum autem velit</strong>,
                             nisi in nihil corrupti veritatis. Minima.
                         </p>
                     </li>
@@ -152,7 +152,7 @@
             </section>
         </main>
         <footer>
-            <p>hDC Host @ 2023</p>
+            <p>hDC Host &copy; 2023</p>
         </footer>
         </div>
         <script>
@@ -160,7 +160,8 @@
                 const navbarItems = document.querySelectorAll(".navbar-items a");
                 const pricesLink = document.querySelector('a[href="#prices"]');
                 const contactsLink = document.querySelector('a[href="#contacts"]');
-                
+                const loginLink = document.querySelector('a[href="login.html"]');
+
                 const scrollToElement = (element) => {
                     const offset = 100; // Adjust this value to control the offset after scrolling
                     const position = element.offsetTop;
@@ -194,6 +195,11 @@
                     event.preventDefault(); // Evita o comportamento padrão do link
                     const header = document.querySelector('#header');
                     header.scrollIntoView({ behavior: 'smooth' });
+                });
+
+                loginLink.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    window.location.href = "login.html";
                 });
             });
         </script>
