@@ -7,14 +7,40 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #232a31;
+}
+
+.item-fixed {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #33333309;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+.btn-fixed {
+    border: 0px;
+    background-color: transparent;
+}
+
+.btn-fixed:hover {
+    cursor: pointer;
+}
+
+.arrow {
+    color: #2cc76a;
+}
+
 h1,
 h2,
 h3 {
-    color: #333;
+    color: #dfdfdf;
 }
 
 p {
-    color: #70747a;
+    color: rgb(201, 201, 201);
 }
 
 /* Navbar */
@@ -24,6 +50,10 @@ p {
     height: 80px;
     background-color: #232a31;
     padding: 0 2rem;
+}
+
+strong {
+    color: #2cc76a;
 }
 
 nav {
@@ -57,8 +87,14 @@ nav {
 }
 
 .navbar-items a:hover {
-    color: #ccc;
+    color: #2cc762;
+    border-bottom: 1px solid #2cc762;
     transition: 0.5s;
+}
+
+.navbar-items .item-button:hover {
+    border-bottom: 1px solid #2cc762;
+    padding-bottom: 5px;
 }
 
 .default-btn {
@@ -154,6 +190,7 @@ nav {
 
 .pricing-container h2{
     font-size: 36px;
+    padding-top: 20px;
 }
 
 .plans-container {
@@ -230,6 +267,7 @@ nav {
     background-color: #34454e;
     text-align: center;
     padding: 5rem 0;
+    margin-bottom: 50px;
 }
 
 .searchdomain-container h2 {
@@ -252,6 +290,7 @@ nav {
 }
 
 .searchdomain-container input[type="text"] {
+    background-color: #dadada;
     width: 60%;
     padding: 20px;
     font-size: 20px;
@@ -265,6 +304,10 @@ nav {
     font-size: 24px;
     cursor: pointer;
     opacity: .9;
+}
+
+.contact-container input[type="submit"]:hover {
+    opacity: 1;
 }
  
 .searchdomain-container input[type="submit"]:hover {
@@ -295,8 +338,14 @@ nav {
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #2cc762;
+    background-color: #dadada;
     margin: 0 10px 20px;
+}
+
+input:focus, textarea:focus {
+    outline-color: #2cc76a;
+    outline-offset: 2px;
 }
 
 .contact-container textarea {
@@ -306,10 +355,10 @@ nav {
     height: 150px;
 }
 
-input:focus, textarea:focus {
+.searchdomain-container input[type="text"]{
     outline-style: dashed;
     outline-color: #2cc762;
-    outline-offset: 2px;
+    outline-offset: 1px;
     
     animation-duration: 3s;
   animation-name: slidein;
@@ -366,14 +415,38 @@ footer {
     .searchdomain-container {
         padding: 2rem 4rem;
     }
+
+    .services-container ul {
+        flex-direction: column;
+    }
+
+    .plans-container {
+        flex-direction: column;
+        padding: 0 2rem;
+        width: 100%;
+    }
+
+    .plan {
+        min-width: 362px;
+        margin: 0 auto 50px;
+    }
 }
 
 /* celular 576px */
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
     html, body {
         overflow-x: hidden;
     }
+
+    .searchdomain-container h2{
+        font-size: 30px;
+    }
+
+    .searchdomain-container p{
+        font-size: 15px;
+    }
+
 
     .navbar-items {
         font-size: 14px;
@@ -390,6 +463,17 @@ footer {
 
     .searchdomain-container input[type="text"] {
         width: 100%;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .searchdomain-container input[type="submit"] {
+        padding: 10px 15px;
+        font-size: 16px;
+        background-color: #2cc76a;
+        color: #fff;
+        cursor: pointer;
+        opacity: .9;
     }
 
     .main-banner p {
@@ -457,83 +541,3 @@ footer {
         font-size: 20px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
