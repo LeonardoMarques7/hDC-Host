@@ -8,13 +8,21 @@
 }
 
 body {
-    background-color: #232a31;
+    background-image: url('../img/mainbanner.png');
+    background-position: center;
+    backdrop-filter: blur(10px);
+    overflow-y: hidden;
+}
+
+.footer-page {
+    height: 200px;
 }
 
 .main-container {
     text-align: center;
     border: 1px solid #dfdfdf;
     background-color: #dfdfdf;
+    box-shadow: 2px 2px 10px #2cc76a;
     max-width: 550px;
     margin: 60px auto 0;
     padding: 20px;
@@ -111,37 +119,22 @@ body {
 
 @media (max-width: 900px) {
     body {
-        background-color: #080c0e;
         padding: 20px;
+        background-image: url('../img/mainbanner.png');
+        background-position: center;
     }
 
     .main-container {
-        background-color: #131c20;
         border-color: #2cc76a;
-    }
-
-    .head-card-login h1,
-    .head-card-login p {
-        color: #dfdfdf;
-    }
-
-    .main-card-login input[type="text"],
-    .main-card-login input[type="password"] {
-        background-color: #131c20;
-        color: #dfdfdf;
     }
 
     .main-card-login input[type="password"] {
         color: #249e55;
     }
 
-    .main-card-login input[type="text"]:focus,
-    .main-card-login input[type="password"]:focus {
-        background-color: #131c20;
-        color: #bbbbbb;
-    }
-
     .footer-card-login p {
         color: #232a31;
     }
 }
+
+/* Finalizando Seção de Projeto da hDC Host com HTML5 e CSS3 (22.08.2023) => {16:00}; */
